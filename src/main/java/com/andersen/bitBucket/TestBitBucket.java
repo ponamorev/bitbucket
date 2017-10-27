@@ -6,23 +6,23 @@ class TestBitBucket {
         for (int i = 0; i < 10; i++)
             bitBucket.add(i);
         System.out.println("Содержимое коллекции после добавления: ");
-        bitBucket.printList();
+        System.out.println(bitBucket);
 
         bitBucket.add(5, 6);
         bitBucket.add(2, 9);
         bitBucket.add(8, -2);
         System.out.println("Содержимое коллекции после добавления по индексу: ");
-        bitBucket.printList();
+        System.out.println(bitBucket);
 
         bitBucket.removeForIndex(2);
         System.out.println("Содержимое коллекции после удаления по индексу: ");
-        bitBucket.printList();
+        System.out.println(bitBucket);
 
         System.out.println("Удаление значений 6 и 10 в коллекции: ");
         bitBucket.remove((Integer) 6);
         bitBucket.remove((Integer) 10);
         System.out.println("Содержимое коллекции после удаления элементов через значения: ");
-        bitBucket.printList();
+        System.out.println(bitBucket);
 
         System.out.println("Значение элемента коллекции по индексу 5: ");
         System.out.println(bitBucket.searchIndex(5));

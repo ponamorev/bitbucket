@@ -116,12 +116,4 @@ class BitBucket extends ArrayList<Integer> {
         }
         return sum / size();
     }
-
-    void printList() {
-        System.out.print("[");
-        for (int val : this) {
-            System.out.print(val + " ");
-        }
-        System.out.println("\b]\n");
-    }
 }
